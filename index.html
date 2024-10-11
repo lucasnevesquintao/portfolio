@@ -11,14 +11,15 @@
         <nav class="container">
             <div class="logo">LN</div>
             <ul class="navlinks">
-                <li> <a> Sobre </a> </li>
-                <li> <a> Skills </a> </li>
-                <li> <a> Projetos </a> </li>
-                <li> <a> Contato </a> </li>
+                <li> <a href="#sobre"> Sobre </a> </li>
+                <li> <a href="#skills"> Skills </a> </li>
+                <li> <a href="#projetos"> Projetos </a> </li>
+                <li> <a href="#contato"> Contato </a> </li>
             </ul>
         </nav>
     </header>
     <main>
+
         <section id="sobre" class="dev container fade-in">
             <div class="dev-texto">
                 <h1>Lucas Neves</h1>
@@ -29,6 +30,7 @@
                 <img src="dev.png" class="imagem-perfil" alt="imagem de um dev"> 
             </div>
         </section>
+
         <section id="skills" class="container fade-in">
             <h2> Skills </h2>
             <div class="skills-grid">
@@ -54,6 +56,7 @@
                 </div>
             </div>
         </section>
+
         <section id="projetos" class="container fade-in">
             <h2> Projetos </h2>
             <div class="projetos-grid">
@@ -86,6 +89,33 @@
                 </div>
             </div>
         </section>
+
+        <section id="contato" class="contato fade-in">
+            <h2 class="titulo-contato">Contate-me!</h2>
+            <form action="#" method="post" class="contato-form">
+                <div class="grupo-formulario">
+                    <label for="">Nome</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Nome social">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" required placeholder="Manda pae"></textarea>
+                </div>
+                <button type="submit">Mandar mensagem</button>
+            </form>
+        </section>
+        <footer>
+            <ul class="icons-footer">
+                <li>&#128187;</li>
+                <li>&#128101;</li>
+                <li>&#128038;</li>
+            </ul>
+            <p>&copy; 2024 Lucas Neves. Todos os direitos reservados</p>
+        </footer>
     </main>
 </body>
 </html>

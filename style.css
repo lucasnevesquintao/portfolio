@@ -10,6 +10,7 @@
     --cor-de-fundo: #f0f4f8;
     --cor-de-texto: #1a202c;
     --cor-primaria: #4299e1;
+    --cor-auxiliar: #ed8936;
     --cor-secundaria: #2b6cb0;
     --cor-de-fundo-card: #ffffff;
     --fonte: 'Inter', Arial, sans-serif;
@@ -151,3 +152,119 @@ section {
     margin-bottom: 1rem;
 }
 
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    background-color: var(--cor-de-fundo-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: var(--transicao);
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+.titulo-projetos {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--cor-secundaria);
+}
+
+.projeto-tags {
+    margin-top: 1rem;
+    display: flex;
+    flex: row wrap;
+}
+
+.projeto-tags span {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#skills, #projetos {
+    margin-top: 140px;
+}
+
+#projetos {
+    margin-bottom: 140px;
+}
+
+.contato {
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input, textarea {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.75rem;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255,255,255,0.3);
+}
+
+button {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.titulo-contato {
+    color: white;
+}
+
+footer {
+    background-color: var(--cor-de-fundo-card);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.icons-footer {
+    display: flex;
+    justify-content: center;
+    list-style: none;/*Retira os estilos de lista*/
+    margin-bottom: 1rem;
+}
+
+/*Animação quando der o F5 na página*/
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.fade-in {
+    animation: fade 1s ease-out;
+}
+/*Animação quando der o F5 na página*/
